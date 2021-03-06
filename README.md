@@ -10,5 +10,7 @@ Also it is possible to remotly activate or deactivate the script. You will just 
 4. Your going to also need a Mouse Auto Clicker, you need to make sure it clicks the page say every 250ms to make sure the page registers a click,  just have it click a non-clickable area of the page.
 5. You might also want to get a Page refresher extension for chrome that refreshes every 90 seconds or so in case of page errros that prevent the script from auto refreshing page. Its a wierd bug I never fixed. Just stays on a white page doing nothing.
 
+You can also mess around with timings for page refresh to make it faster, slower etc..
+
 Enjoy your VTO!
 
