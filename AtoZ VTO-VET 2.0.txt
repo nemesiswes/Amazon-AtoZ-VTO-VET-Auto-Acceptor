@@ -41,7 +41,7 @@ async function Get_VTO()
 
         jQuery.ajax({
             type: 'GET',
-            url: 'http://192.168.0.112/atoz/?username=wes&password=W@1234',
+            url: 'ENTER URL OF HOME SERVER',
             dataType: 'text',
             success: function( data ) {
                 if(data == "true")
@@ -111,7 +111,7 @@ async function Get_VTO()
         else if(window.location.href.indexOf("https://atoz.amazon.work/time/optional") == -1)
         {
             //Need to redirect to https://atoz.amazon.work/
-            await new Promise(r => setTimeout(r, 500));
+            await new Promise(r => setTimeout(r, 1000));
             reload("https://atoz.amazon.work/time/optional");
             //window.location.href = "https://atoz.amazon.work/time/optional";
         }
@@ -123,7 +123,7 @@ async function Get_VTO()
             if(sound_on)
             {
                 //alert("Playing sound");
-                var alarm_sound = new Audio("https://dl.dropbox.com/s/kh8idcpcr56vn19/Danger%20Alarm%20Sound%20Effect.mp3");
+                var alarm_sound = new Audio(ENTER URL OF AUDIOCLIP OR DISBALE THIS CODE);
                 alarm_sound.loop = true;
                 alarm_sound.play();
             }
@@ -132,11 +132,11 @@ async function Get_VTO()
         }
         else if(window.location.href.indexOf("https://atoz.amazon.work/time/optional") > -1)
         {
-            await new Promise(r => setTimeout(r, 500));
+            await new Promise(r => setTimeout(r, 1000));
 
             jQuery.ajax({
                 type: 'GET',
-                url: 'https://atoz.amazon.work/api/v1/opportunities/get_opportunities?employee_id=108895211',
+                url: 'https://atoz.amazon.work/api/v1/opportunities/get_opportunities?employee_id=ENTER YOUR EMPLOYEE ID',
                 dataType: 'json',
                 success: function( data ) {
                     //alert(Object.keys(data.vtoOpportunities).length.toString());
@@ -171,7 +171,7 @@ async function Get_VTO()
                         if(sound_on)
                         {
                             //alert("Playing sound");
-                            var alarm_sound = new Audio("https://dl.dropbox.com/s/kh8idcpcr56vn19/Danger%20Alarm%20Sound%20Effect.mp3");
+                            var alarm_sound = new Audio(ENTER URL OF AUDIOCLIP OR DISBALE THIS CODE);
                             alarm_sound.loop = true;
                             alarm_sound.play();
                         }
@@ -242,11 +242,11 @@ async function accept_vto()
 
     //
     //
-    // CODE ABOVE WAS BEFORE WE WENT TO THE ACCEPT VTO PAGE BY JUST APPENDING THE OP_ID, IT WOULD FIRST CLICK THE OP_ID TO GO TO THAT PAGE
+    // CODE ABOVE WAS BEFORE I WENT TO THE ACCEPT VTO PAGE BY JUST APPENDING THE OP_ID, IT WOULD FIRST CLICK THE OP_ID TO GO TO THAT PAGE
     //
     //
 
-    //Wait to make sure autoclicker interacts with dom first
+    //Wait to make sure Mouse autoclicker interacts with dom first
     await new Promise(r => setTimeout(r, 1000));
 
     //Now accepting VTO
