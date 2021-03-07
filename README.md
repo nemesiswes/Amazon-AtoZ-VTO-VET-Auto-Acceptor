@@ -4,6 +4,8 @@ Tired of not getting VTO or VET? Well now you can get all the VTO or VET.
 I made this using the TamperMonkey Extension for Chrome. You should be able to get this working in Firefox using Grease monkey with little modification. 
 Also it is possible to remotly activate or deactivate the script. You will just need a Home server, in my case I just used XAMPP for Windows.
 
+The AtoZ VTO-VET 2.0.txt is the code to use with TamperMonkey, just copy and paste the code into a new TamperMonkey Script.
+
 1. Make sure you input your Employee id where specified in script
 2. Add home server url if you set that up or comment out the server check code.
 3. Edit sound url or comment out all sound clip code in various places.
