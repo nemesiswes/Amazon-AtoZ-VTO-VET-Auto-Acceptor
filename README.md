@@ -6,9 +6,9 @@ Also it is possible to remotly activate or deactivate the script. You will just 
 
 The AtoZ VTO-VET 2.0.txt is the code to use with TamperMonkey, just copy and paste the code into a new TamperMonkey Script.
 
-1. Make sure you input your Employee id where specified in script
-2. Add home server url if you set that up or comment out the server check code.
-3. Edit sound url or comment out all sound clip code in various places.
+1. Put your Employee ID in the employee_id field.
+2. Optional, add Home server URl in the home_server_url field. Then uncomment out the Home server code
+3. Optional, add sound_clip to the audio_clip_url field. Then uncomment out the sound clip code in the alarm_sound function.
 4. Your going to also need a Mouse Auto Clicker, you need to make sure it clicks the page say every 250ms to make sure the page registers a click,  just have it click a non-clickable area of the page.
 5. You might also want to get a Page refresher extension for chrome that refreshes every 90 seconds or so in case of page errros that prevent the script from auto refreshing page. Its a wierd bug I never fixed. Just stays on a white page doing nothing.
 
