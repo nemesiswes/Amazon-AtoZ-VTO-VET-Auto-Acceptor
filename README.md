@@ -14,5 +14,8 @@ The AtoZ VTO-VET 2.0.txt is the code to use with TamperMonkey, just copy and pas
 
 You can also mess around with timings for page refresh to make it faster, slower etc..
 
+Also, very important, you need make sure chrome auto fills your login details for AtoZ, this way all my script does it click login. This is other reason you need a Mouse AutoClicker, if the mouse doesn't click the page, login will fail even if details are correct. You will also want to make sure remember this device is checked when logging in or getting sms code, I don't quite remember where it happens.
+
+
 Enjoy your VTO!
 
