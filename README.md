@@ -22,7 +22,7 @@ Also If you want to Test it, you can spoof the VTO CALL with your own VTO.
 2. Get Chrome Extension Requestly and create a rule redirect, If Request "URL" Contains "https://atoz.amazon.work/api/v1/opportunities/get_opportunities?employee_id=YOUR EMPLOYEE ID"
 3. Set Destination to your Server address, in my case "http://localhost/AtoZ_debug/index.php";
 
-I have the php file included to spoof calls, you will need to change dates and stuff for it to work though.
+I have the php file included to spoof calls, you will need to change dates and stuff for it to work though. You can try submitting fake vto, it won't do anything except say not valid or inelgible etc...
 
 Enjoy your VTO!
 
