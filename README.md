@@ -17,5 +17,12 @@ You can also mess around with timings for page refresh to make it faster, slower
 Also, very important, you need make sure chrome auto fills your login details for AtoZ, this way all my script does it click login. This is other reason you need a Mouse AutoClicker, if the mouse doesn't click the page, login will fail even if details are correct. You will also want to make sure remember this device is checked when logging in or getting sms code, I don't quite remember where it happens.
 
 
+Also If you want to Test it, you can spoof the VTO CALL with your own VTO. 
+1. Add to Chrome Target "--autoplay-policy=no-user-gesture-required --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp"
+2. Get Chrome Extension Requestly and create a rule redirect, If Request "URL" Contains "https://atoz.amazon.work/api/v1/opportunities/get_opportunities?employee_id=YOUR EMPLOYEE ID"
+3. Set Destination to your Server address, in my case "http://localhost/AtoZ_debug/index.php";
+
+I have the php file included to spoof calls, you will need to change dates and stuff for it to work though.
+
 Enjoy your VTO!
 
