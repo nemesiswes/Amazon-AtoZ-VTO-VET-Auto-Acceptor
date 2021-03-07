@@ -35,7 +35,8 @@ Get_VTO();
 async function Get_VTO()
 {
 
-    //COMMENT OUT THIS CODE below if not using home server
+    /*
+    //Commented out by default
     //First check if checking is allowed if enough time has passed since last check
     if((new Date().getTime()) >= (last_check_time + check_interval))
     {
@@ -62,6 +63,7 @@ async function Get_VTO()
         });
     }
     //END OF HOME SERVER CODE
+    */
 
     //alert("Checking = " + checking_allowed);
 
@@ -205,11 +207,13 @@ async function Get_VTO()
 
 function alarm_sound()
 {
-    //COMMENT OUT THIS CODE IF NOT USING SOUNDCLIP URL
+    /*
+    //Commented out by default.
     //alert("Playing sound");
     var alarm_sound = new Audio(ENTER URL OF AUDIOCLIP OR DISBALE THIS CODE);
     alarm_sound.loop = true;
     alarm_sound.play();
+    */
 }
 
 
