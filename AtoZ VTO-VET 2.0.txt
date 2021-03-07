@@ -17,7 +17,7 @@
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // ==/UserScript==
 
-//Create By Wesly Waid - 2021
+//Created By Wesly Waid - 2021
 
 
 //Master Switch, is set by checking the home server wether it should run every so often
