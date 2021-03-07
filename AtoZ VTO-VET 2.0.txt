@@ -19,6 +19,9 @@
 
 //Created By Wesly Waid - 2021
 
+var employee_id = 000000000; // Change this to your EmployeeID
+var home_server_url = ""; 
+var audio_clip_url = "";
 
 //Master Switch, is set by checking the home server wether it should run every so often
 var checking_allowed = GM_getValue("checking_allowed", "true");
@@ -44,7 +47,7 @@ async function Get_VTO()
 
         jQuery.ajax({
             type: 'GET',
-            url: 'ENTER URL OF HOME SERVER',
+            url: home_server_url,
             dataType: 'text',
             success: function( data ) {
                 if(data == "true")
@@ -138,7 +141,7 @@ async function Get_VTO()
 
             jQuery.ajax({
                 type: 'GET',
-                url: 'https://atoz.amazon.work/api/v1/opportunities/get_opportunities?employee_id=ENTER YOUR EMPLOYEE ID',
+                url: 'https://atoz.amazon.work/api/v1/opportunities/get_opportunities?employee_id=' + employee_id,
                 dataType: 'json',
                 success: function( data ) {
                     //alert(Object.keys(data.vtoOpportunities).length.toString());
@@ -210,7 +213,7 @@ function alarm_sound()
     /*
     //Commented out by default.
     //alert("Playing sound");
-    var alarm_sound = new Audio(ENTER URL OF AUDIOCLIP OR DISBALE THIS CODE);
+    var alarm_sound = new Audio(audio_clip_url);
     alarm_sound.loop = true;
     alarm_sound.play();
     */
