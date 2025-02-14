@@ -1,4 +1,6 @@
 # Amazon-AtoZ-VTO-VET-Auto-Acceptor
+02-14-2025 update: This probably doesn't work anymore based on reports I have heard about. Feel free to try and fix it as I stopped work on it back in like 2022.
+
 Tired of not getting VTO or VET? Well now you can get all the VTO or VET. 
 
 I made this using the TamperMonkey Extension for Chrome. You should be able to get this working in Firefox using Grease monkey with little modification. 
